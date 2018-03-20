@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue 实例</title>
+    <script src="../assets/js/vue.js"></script>
+</head>
+
+<body>
+    <h1>v-if v-else v-show学习</h1>
+    <hr>
+    <div id="app">
+        <div v-if="isLogin">你好 {{msg}}</div>
+        <div v-else>请先登录</div>
+        <div v-show="isLogin">你好 {{msg}}</div>
+    </div>
+<div>
+    <ul>
+        <li> v-if: 判断是否加载，在需要的时候加载</li>
+        <li>v-show: 调整css中display属性,dom已经加载，只是css控制没有显示出来</li>
+    </ul>
+</div>
+</body>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            msg: "hello Vue",
+            isLogin: true
+        }
+    })
+</script>
+
+</html>
