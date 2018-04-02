@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>线程</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 </head>
 
 <body>
     <div>
-        <p>1.   请分别从资源分配、创建速度、通信、并行执行效率的角度筒述多线程技术的优势。</p>
+        <el-card class="box-card" style="width: 480px;">
+            <ol>
+                <li>测试</li>
+            </ol>
+        </el-card>
+    </div>
+    <div>
+        <p>1. 请分别从资源分配、创建速度、通信、并行执行效率的角度筒述多线程技术的优势。</p>
         <ol>
             <li>创建线程无需要另外分配资源，而创建进程需要额外分配资源</li>
             <li>创建线程无需分配资源,因此创建线程的速度比创建进程的速度快 </li>
@@ -19,15 +29,14 @@
         </ol>
     </div>
     <div>
-        <p>2.   防止死锁发生时可采用什么策略来使循环等待资源的条件不成立?这个策略如何应用到5个哲学家就餐问题中?</p>
+        <p>2. 防止死锁发生时可采用什么策略来使循环等待资源的条件不成立?这个策略如何应用到5个哲学家就餐问题中?</p>
         <ol>
-            <li>对资源采用按序分配的策略<br>
-            修改第5个哲学家的程序,即规定每个哲学家想吃面条时，总是从自己左右两旁的筷子中先取编号小的筷子,
-            再取编号大的筷子;对于第5个哲学家,他必须先拿到右边的编号小的筷子,然后才能拿到左边的筷子
+            <li>对资源采用按序分配的策略
+                <br> 修改第5个哲学家的程序,即规定每个哲学家想吃面条时，总是从自己左右两旁的筷子中先取编号小的筷子, 再取编号大的筷子;对于第5个哲学家,他必须先拿到右边的编号小的筷子,然后才能拿到左边的筷子
             </li>
             <li style="margin-top: 6px">
-                可以采用静态分配资源的策略<br>
-                修改哲学家程序,每个哲学家只有当左右两边的筷子都空闲时,哲学家才能拿起筷子就餐
+                可以采用静态分配资源的策略
+                <br> 修改哲学家程序,每个哲学家只有当左右两边的筷子都空闲时,哲学家才能拿起筷子就餐
             </li>
         </ol>
     </div>
