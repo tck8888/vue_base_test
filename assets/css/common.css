@@ -5,7 +5,14 @@
     box-shadow: 2px 2px 3px #aaaaaa;
     padding: 10px;
 }
-.common-selected{
+
+.common-selected {
     color: red;
-    font-weight:bold; 
+    font-weight: bold;
+}
+
+.common-completion {
+    color: red;
+    text-decoration: underline;
+    font-size: 16px;
 }
