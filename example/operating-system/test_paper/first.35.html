@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>第二十题</title>
+    <title>第35题</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/common.css" />
 </head>
 
 <body>
     <div class="app">
-        <p>2017年10月</p>
-        <p>设系统有一类数量为M的独占性资源，系统中N个进程竞争该类资源，每个进程对资源的最大需求为W。下列关于M、N、W的取值，系统可能发生死锁的是
-            <p>  A．M=3；N=2；W=2    B．M=3；N=2；W=3
-                    C．M=7．N=-3；W=3   D．M=10；N=3；W=4
-                   </p> 
+        <p>设一移动头磁盘系统，共有200个磁道，编号为O～199。磁盘请求队列中是一些随机请求，它们按照到达的次序分别处于110、180、32、115、15、120、60、70号磁道上，当前磁头在50号磁道上，并向磁道号增加的方向移动。求在下列移臂调度算法下的服务顺序和磁头移动道数：(1)先来先服务调度算法；(2)单向扫描调度算法
+        </p>
+        <p>
+            先来先服务调度算法；
+            <br>服务顺序50 110 180 32 115 15 120 60 70
+            <br>磁头移动道数60+70+148+83+100+105+60+10=636
+        </p>
+        <p>
+            单向扫描调度算法；
+            <br>服务顺序50 60 70 110 115 120 180 0 15 32
+            <br>磁头移动道数10+10+10+40+15+5+60+180+15+17=342
         </p>
     </div>
 </body>
-<style>
-    .app {
-        border: 1px solid #00ff00
-    }
-</style>
+
 
 </html>

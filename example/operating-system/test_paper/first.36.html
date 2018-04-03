@@ -5,23 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>第二十题</title>
+    <title>第36题</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/common.css" />
 </head>
 
 <body>
     <div class="app">
-        <p>2017年10月</p>
-        <p>设系统有一类数量为M的独占性资源，系统中N个进程竞争该类资源，每个进程对资源的最大需求为W。下列关于M、N、W的取值，系统可能发生死锁的是
-            <p>  A．M=3；N=2；W=2    B．M=3；N=2；W=3
-                    C．M=7．N=-3；W=3   D．M=10；N=3；W=4
-                   </p> 
+        <p>请分别从资源分配、创建速度、通信、并行执行效率的角度筒述多线程技术的优势。
         </p>
+       <ol>
+            <li>创建线程无需外分配资源,而创建进程需要分配资源;</li>
+            <li>创建线程无需分配资源,因而创建线程速度比创建进程速度快</li>
+            <li>线程间的通信在同一地址空间中进行,不需要额外的通信机制,所以通信简单,信息传递速度也更快</li>
+            <li>线程能独立进行，充分利用和发挥处理器与外围设备并行工作的能力</li>
+       </ol>
     </div>
 </body>
-<style>
-    .app {
-        border: 1px solid #00ff00
-    }
-</style>
 
 </html>

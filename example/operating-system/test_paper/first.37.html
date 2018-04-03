@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>第二十题</title>
+    <title>第37题</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/common.css" />
 </head>
 
 <body>
     <div class="app">
-        <p>2017年10月</p>
-        <p>设系统有一类数量为M的独占性资源，系统中N个进程竞争该类资源，每个进程对资源的最大需求为W。下列关于M、N、W的取值，系统可能发生死锁的是
-            <p>  A．M=3；N=2；W=2    B．M=3；N=2；W=3
-                    C．M=7．N=-3；W=3   D．M=10；N=3；W=4
-                   </p> 
+        <p>防止死锁发生时可采用什么策略来使循环等待资源的条件不成立?这个策略如何应用到5个哲学家就餐问题中?
         </p>
+        <ol>
+            <li>对资源采用按序分配的策略
+                <br> 修改第5个哲学家的程序,即规定每个哲学家想吃面条时，总是从自己左右两旁的筷子中先取编号小的筷子, 再取编号大的筷子;对于第5个哲学家,他必须先拿到右边的编号小的筷子,然后才能拿到左边的筷子
+            </li>
+            <li style="margin-top: 6px">
+                可以采用静态分配资源的策略
+                <br> 修改哲学家程序,每个哲学家只有当左右两边的筷子都空闲时,哲学家才能拿起筷子就餐
+            </li>
+        </ol>
     </div>
 </body>
-<style>
-    .app {
-        border: 1px solid #00ff00
-    }
-</style>
+
 
 </html>
