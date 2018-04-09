@@ -11,18 +11,40 @@
 
 <body>
     <div class="app">
-        <p>2017年10月</p>
-        <p>设系统有一类数量为M的独占性资源，系统中N个进程竞争该类资源，每个进程对资源的最大需求为W。下列关于M、N、W的取值，系统可能发生死锁的是
-            <p>  A．M=3；N=2；W=2    B．M=3；N=2；W=3
-                    C．M=7．N=-3；W=3   D．M=10；N=3；W=4
-                   </p> 
+        <p>201710</p>
+        <p>假定某计算机系统配置的生存容量为1GB，主存空间一共被划分成512K个块。当采 用页式虚拟存储管理时，提供给用户使用的逻辑地址空闻为4GB。试问：
+            <ol>
+                <li>主存空间每块长度为多少字节(Byte)?</li>
+                <span class="common-selected">1GB/512K=2KB块</span>
+                <li>主存空间的物理地址有多少位(bit)?</li>
+                <span class="common-selected">1GB=2³º 30位</span>
+                <li>用户作业最多可以有多少页?</li>
+                <span class="common-selected">4GB/2KB = 2M页</span>
+                <li>画出该系统的逻辑地址结构示意图；</li>
+                <table>
+                        <tr>
+                            <th>31</th>
+                            <th>11</th>
+                            <th>10</th>
+                            <th>0</th>
+                        </tr>
+                    </table>
+               <table border="1">
+                   <tr>
+                       <th>页号</th>
+                       <th>页内地址</th>
+                   </tr>
+               </table>
+               <table >
+                    <tr>
+                        <th>(21位)</th>
+                        <th>(11位)</th>
+                    </tr>
+                </table>
+            </ol>
         </p>
     </div>
 </body>
-<style>
-    .app {
-        border: 1px solid #00ff00
-    }
-</style>
+
 
 </html>
