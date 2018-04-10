@@ -12,12 +12,23 @@
 <body>
     <div class="app">
         <p>201710</p>
-        在UNIX系统的各个寄存器中，程序计数器寄存器用来存放<span class="common-completion">指令地址</span>
-        ，当出现某个中断事件时，程序计数器寄存器中当前的值就是被中断程序的<span class="common-completion">断点</span>。
+        在UNIX系统的各个寄存器中，程序计数器寄存器用来存放
+        <span class="common-completion">指令地址</span>
+        ，当出现某个中断事件时，程序计数器寄存器中当前的值就是被中断程序的
+        <span class="common-completion">断点</span>。
     </div>
     <div class="app">
         <p>201704</p>
-        UNIX系统有一个2号进程，其作用是保证有足够的<span class="common-completion">空闲物理页</span>可供使用，这个2号进程称为<span class="common-completion">页面守护进程</span>
+        UNIX系统有一个2号进程，其作用是保证有足够的
+        <span class="common-completion">空闲物理页</span>可供使用，这个2号进程称为
+        <span class="common-completion">页面守护进程</span>
+    </div>
+
+    <div class="app">
+        <p>201610</p>
+        UNIX中，除了0号进程和1号进程外，其他进程总是使用系统调用
+        <span class="common-completion">fork</span>来创建子进程，形成父子关系。而子进程是使用系统调用
+        <span class="common-completion">exit</span>请求终止自己，并释放父进程。
     </div>
 </body>
 
