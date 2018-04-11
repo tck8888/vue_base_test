@@ -12,6 +12,17 @@
 <body>
     <div class="app">
         <p>201710</p>
+        <p>设某进程访问内存的页面按照以下序列：1，2，3，6，4，7，3，2，1，4，7，5，6，5，2，1。当进程分得的页面数为4的时候，分别计算下列置换算法的缺页数。要求写出详细计算过程。 (初始主存为空) 要求：
+            <p>(1)最近最久未使用调度算法(LRU)。</p>
+          <img src="../../../assets/img/os/2017103901.png" alt="">
+            <p>(2)先进先出调度算法(FIFO)。</p>
+            <img src="../../../assets/img/os/2017103902.png" alt="">
+            <p>(3)最佳调度算法(OPT)。</p>
+            <img src="../../../assets/img/os/2017103903.png" alt="">
+        </p>
+    </div>
+    <div class="app">
+        <p>201710</p>
         <p>假定某计算机系统配置的生存容量为1GB，主存空间一共被划分成512K个块。当采 用页式虚拟存储管理时，提供给用户使用的逻辑地址空闻为4GB。试问：
             <ol>
                 <li>主存空间每块长度为多少字节(Byte)?</li>
@@ -22,20 +33,20 @@
                 <span class="common-selected">4GB/2KB = 2M页</span>
                 <li>画出该系统的逻辑地址结构示意图；</li>
                 <table>
-                        <tr>
-                            <th>31</th>
-                            <th>11</th>
-                            <th>10</th>
-                            <th>0</th>
-                        </tr>
-                    </table>
-               <table border="1">
-                   <tr>
-                       <th>页号</th>
-                       <th>页内地址</th>
-                   </tr>
-               </table>
-               <table >
+                    <tr>
+                        <th>31</th>
+                        <th>11</th>
+                        <th>10</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+                <table border="1">
+                    <tr>
+                        <th>页号</th>
+                        <th>页内地址</th>
+                    </tr>
+                </table>
+                <table>
                     <tr>
                         <th>(21位)</th>
                         <th>(11位)</th>
@@ -43,6 +54,9 @@
                 </table>
             </ol>
         </p>
+    </div>
+    <div class="app">
+        <a href="./first.40.html">第40题</a>
     </div>
 </body>
 

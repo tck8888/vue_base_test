@@ -10,6 +10,108 @@
 </head>
 
 <body>
+
+    <div class="app">
+        <p>201710</p>
+        <p>38．假定在单CPU条件下有下列要执行的作业：</p>
+        <table border="1">
+            <tr>
+                <th>作业</th>
+                <th>到达时间</th>
+                <th>运行时间</th>
+                <th>优先数</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>0</th>
+                <th>10</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>1</th>
+                <th>4</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>2</th>
+                <th>6</th>
+                <th>1</th>
+            </tr>
+        </table>
+        忽略设备工作时问和系统进行调度的时间。
+        <p> (1)若作业调度采用先来先服务算法，各个作业的周转时间是多少?平均周转时间是多少?</p>
+        <table border="1">
+            <tr>
+                <th>作业</th>
+                <th>到达时间</th>
+                <th>运行时间</th>
+                <th>完成时间</th>
+                <th>周转时间</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>0</th>
+                <th>10</th>
+                <th>10</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>1</th>
+                <th>4</th>
+                <th>14</th>
+                <th>13</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>2</th>
+                <th>6</th>
+                <th>20</th>
+                <th>18</th>
+            </tr>
+            <tr>
+                <th colspan="3">平均周转时间</th>
+                <th colspan="2">13.67</th>
+            </tr>
+        </table>
+        <p>(2)若作业调度采用非抢占式优先级调度算法(优先数大的优先级低)，各个作业的周转时间是多少?平均周转时间是多少?</p>
+        <table border="1">
+            <tr>
+                <th>作业</th>
+                <th>到达时间</th>
+                <th>运行时间</th>
+                <th>完成时间</th>
+                <th>周转时间</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>0</th>
+                <th>10</th>
+                <th>10</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>1</th>
+                <th>4</th>
+                <th>20</th>
+                <th>19</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>2</th>
+                <th>6</th>
+                <th>16</th>
+                <th>14</th>
+            </tr>
+            <tr>
+                <th colspan="3">平均周转时间</th>
+                <th colspan="2">14.33</th>
+            </tr>
+        </table>
+    </div>
     <div class="app">
         <p>201710</p>
         <p>在多道程序设计系统中采用不能移动已在主存中作业的可变分区方式管理主存，现有供用户使用的主存空间100K，有一作业序列如下面表格所示，所有作业都是仅作计算的，其中优先数大则优先级高，系统从
@@ -230,6 +332,10 @@
                 <th>36分钟</th>
             </tr>
         </table>
+    </div>
+
+    <div class="app">
+        <a href="./first.38.html">第38题</a>
     </div>
 </body>
 
